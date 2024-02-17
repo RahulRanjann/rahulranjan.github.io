@@ -48,7 +48,7 @@ body {
 }
 
 .logoR {
-  font-weight: 800;
+  /* font-weight: 800; */
   font-size: xx-large;
 }
 
@@ -62,8 +62,10 @@ body {
   color: #8e1dff !important;
 }
 
-/* #R {
-} */
+#R {
+  font-family: Fira Code;
+  color: #8e1dff !important;
+}
 
 #gt {
   font-family: Fira Code;
@@ -90,7 +92,7 @@ body {
   box-shadow: 0px 0px 105px 45px rgba(151, 53, 250, 0.9);
 }
 
-.slide-left{-webkit-animation:slide-left .5s cubic-bezier(.25,.46,.45,.94) both;animation:slide-left .5s cubic-bezier(.25,.46,.45,.94) both}
+.homeC2{-webkit-animation:slide-left .9s cubic-bezier(.25,.46,.45,.94) both;animation:slide-left .9s cubic-bezier(.25,.46,.45,.94) both}
 
 @-webkit-keyframes slide-left {
   0% {
