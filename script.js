@@ -1,20 +1,12 @@
-// Check if the user's theme preference is already set
-const userThemePreference = localStorage.getItem('theme');
-
-// If the preference is set, apply the theme
-if (userThemePreference === 'dark') {
-  document.body.classList.add('dark-theme');
-}
-
-// Get the theme toggle button element
-const themeToggle = document.getElementById('theme-toggle');
-
-// Event listener for the theme toggle button
-themeToggle.addEventListener('click', () => {
-  // Toggle the dark theme class on the body element
-  document.body.classList.toggle('dark-theme');
-
-  // Save the user's theme preference to Local Storage
-  const currentTheme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
-  localStorage.setItem('theme', currentTheme);
+document.querySelector("#switch").addEventListener("click", function () {
+  const html = document.querySelector('html');
+  const currentTheme = html.getAttribute('data-mdb-theme');
+  const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+  html.setAttribute('data-mdb-theme', newTheme);
+  const elementR = document.getElementById("R");
+  if (newTheme === 'light') {
+    elementR.style.color = ' #8e1dff';
+  } else {
+    elementR.style.color = 'white';
+  }
 });
