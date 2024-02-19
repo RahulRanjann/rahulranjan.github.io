@@ -29,10 +29,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <!-- Navbar brand -->
         <a class="navbar-brand mt-2 mt-lg-0" href="#">
-          <span class="logoR" id="lt">&lt;</span>
-          <span class="logoR" id="slash">/</span>
-          <span class="logoR" id="R">R</span>
-          <span class="logoR" id="gt">&gt;</span>
+          <span class="logoR" id="lt"> <h1>&lt;</h1></span>
+          <span class="logoR" id="slash"><h1>/</h1></span>
+          <span class="logoR" id="R"><h1>R</h1></span>
+          <span class="logoR" id="gt"><h1>&gt;</h1></span>
         </a>
         <!-- Left links -->
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -110,25 +110,74 @@
     <!-- Container wrapper -->
   </nav>
   <!-- Navbar -->
-
-  <div class="container" name="home">
-    <div class="sec" id="home" >
- 
-        <div class="homeC1">
-          <h1>Welcome to the Home Page!</h1>
-          <p>This is the content of the Home Page.</p>
+<div class="container">
+  <div class="row home">
+    <div class="col-md-8 ">
+      <div class="homeC1">
+        <span class="title">
+          Web Developer
+        </span>
+        <h1>Hi, i'm <span class="myname">Rahul</span></h1>
+        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing e deleniti dolores itaque maiores!</p>
+        <div>
+          <button type="button" class="btn btn-"#8e1dff" data-mdb-ripple-color="#8e1dff">Success</button>
         </div>
-        <div class="homeC2">
-          <div class="circlie">
-            <h1>pic</h1>
-          </div>
-        </div>
+      </div>
     </div>
 
-    <div class="sec" id="about">
-      <a name="about">
-        <h1>Welcome to the About Page!</h1>
-        <p>This is the content of the Home Page.</p>
+    <div class="col-md-4 ">
+      <div class="homeC2" data-tilt>
+        <div class="circle">
+          <img src="assets/img/me.jpg"  alt="me">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+   
+
+
+
+
+
+
+
+
+<!-- 
+  <div class="coniner">
+    <div class="sec" id="home">
+      <div class="row" style="display: flex !important;">
+        <div class="col-md-6" style="background-color: aqua; height: auto; width: 100vw;">D1</div>
+        <div class="col-md-6" style="background-color: blue; height: auto; width: 100vw;">D2</div>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="homeC1">
+      <span class="title">
+        Web Developer
+      </span>
+      <h1>Hi, i'm <span class="myname">Rahul</span></h1>
+      <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing e deleniti dolores itaque maiores!</p>
+    </div>
+
+    <div class="homeC2">
+      <div class="circle">
+        <img src="assets/img/rara.jpg" alt="me">
+      </div>
+    </div>
+
+    <div class="sec" id="about" name=" about">
+      <a class="about">
+        <div class="row justify-content-center align-items-center g-2">
+          <div class="col">Column</div>
+          <div class="col">Column</div>
+
+        </div>
+
       </a>
     </div>
 
@@ -152,12 +201,21 @@
         <p>This is the content of the Home Page.</p>
       </a>
     </div>
-  </div>
+  </div> -->
 
   <script src="script.js"></script>
-
   <!-- MDB -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"></script>
+  <script type="text/javascript" src="vanilla-tilt.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelector(".circle"), {
+		max: 25,
+		speed: 400
+	});
+	
+	//It also supports NodeList
+	VanillaTilt.init(document.querySelectorAll(".circle"));
+</script>
 </body>
 
 </html>
