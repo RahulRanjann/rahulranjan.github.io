@@ -10,3 +10,5 @@ document.querySelector("#switch").addEventListener("click", function () {
     elementR.style.color = 'white';
   }
 });
+
+

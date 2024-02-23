@@ -35,7 +35,7 @@
           <span class="logoR" id="gt"><h1>&gt;</h1></span>
         </a>
         <!-- Left links -->
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
           <li class="nav-item">
             <a class="nav-link" href="#home">Home</a>
           </li>
@@ -59,12 +59,12 @@
       <!-- Right elements -->
       <div class="d-flex align-items-center">
         <!-- Icon -->
-        <a class="text-reset me-3" href="#">
+        <!-- <a class="text-reset me-3" href="#">
           <i class="fas fa-shopping-cart"></i>
-        </a>
+        </a> -->
 
         <!-- Notifications -->
-        <div class="dropdown">
+        <!-- <div class="dropdown">
           <a data-mdb-dropdown-init class="text-reset me-3 dropdown-toggle hidden-arrow" href="#"
             id="navbarDropdownMenuLink" role="button" aria-expanded="false">
             <i class="fas fa-bell"></i>
@@ -81,31 +81,21 @@
               <a class="dropdown-item" href="#">Something else here</a>
             </li>
           </ul>
-        </div>
+        </div> -->
         <!-- Avatar -->
+
+
+        
+
+
+
+
         <div>
           <button id="switch">Switch</button>
-        </div>
-        <div class="dropdown">
-          <a data-mdb-dropdown-init class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#"
-            id="navbarDropdownMenuAvatar" role="button" aria-expanded="false">
-            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" height="25"
-              alt="Black and White Portrait of a Man" loading="lazy" />
-          </a>
-          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
-            <li>
-              <a class="dropdown-item" href="#home">My profile</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">Settings</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">Logout</a>
-            </li>
-          </ul>
+          
         </div>
       </div>
-      <!-- Right elements -->
+
     </div>
     <!-- Container wrapper -->
   </nav>
@@ -117,24 +107,33 @@
         <span class="title">
           Web Developer
         </span>
-        <h1>Hi, i'm <span class="myname">Rahul</span></h1>
-        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing e deleniti dolores itaque maiores!</p>
-        <div>
-          <button type="button" class="btn btn-"#8e1dff" data-mdb-ripple-color="#8e1dff">Success</button>
+        <h1>Hi, I'm <span class="myname">Rahul</span></h1>
+        <h3>
+          i am a <span class="typing">Developer</span>
+        </h3>
+        <br>
+        <p class="description">
+          <span>Hi there! I am a Developer who loves creating and making something better.</span>
+          <br>
+          <span>
+            I am currently pursuing B.Tech in Computer Science at MIT Manipal possessing strong technical skills, particularly in JavaScript, Java, Firebase...
+          </span>
+          </p>
+        <div class="btnCv">
+          <button class="cvLink">Download Resume</button>
         </div>
       </div>
     </div>
 
-    <div class="col-md-4 ">
+    <div class="col-md-4 picBox">
       <div class="homeC2" data-tilt>
         <div class="circle">
-          <img src="assets/img/me.jpg"  alt="me">
+          <img src="assets/img/image-removebg-preview (3).png"  alt="me">
         </div>
       </div>
     </div>
   </div>
 </div>
-   
 
 
 
@@ -206,16 +205,7 @@
   <script src="script.js"></script>
   <!-- MDB -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"></script>
-  <script type="text/javascript" src="vanilla-tilt.js"></script>
-<script type="text/javascript">
-	VanillaTilt.init(document.querySelector(".circle"), {
-		max: 25,
-		speed: 400
-	});
-	
-	//It also supports NodeList
-	VanillaTilt.init(document.querySelectorAll(".circle"));
-</script>
+
 </body>
 
 </html>

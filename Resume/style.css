@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fira Code", monospace;
+
+
+}
+
+.page{
+    margin-top: 25px;
+    margin-left: 0px;
+    margin-right: 10px;
+}
+
+.head{
+    width: 100%;
+    background-color: blueviolet;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    padding: 10px;
+}
+
+.imgbox{
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    /* margin-top: 10px; */
+  
+}
+
+.imgbox .img{
+
+    color: white;
+    font-size: xxx-large;
+    border: 1px solid rgb(45, 45, 45);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.headname{
+    color: white;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.name{
+    color: white;
+    font-size: xx-large;
+}
+
+.headabout{
+    color: white;
+    text-align: justify;
+    width: 750px;
+}
+
+.headPinfo {
+    display: flex; /* Make the container a flexbox */
+    align-items: center; /* Align content vertically within the line */
+  }
+  
+  .info {
+    display: flex; /* Make each info div a flexbox */
+    align-items: center; /* Align content within each info div */
+    margin-right: 20px; /* Add spacing between info divs */
+  }
+  
+  .material-symbols-outlined {
+    margin-right: 10px; /* Add spacing between icon and text */
+  }
+  
+
+
+#addr{
+ text-align: center;
+}
+
+#phone,#email{
+    padding-left: 8px   ;
+}
+
+
+#email{
+   border: none;
+}
+
+#line{
+    width: 100%;
+    height: 2px;
+    background-color: rgb(62, 62, 62);
+}
+
+.resumebody{
+    padding: 20px;
+    height: 100vh;
+    width: auto;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: rgb(226, 226, 226);
+}
+
+
+.collage{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap; 
+}
+
+.date{
+    float: left;
+}
+
+.Rside{
+    padding-right: 30px !important;
+}
+
+.Lside .skill h4{
+    background-color: blueviolet;
+    padding: 5px 0px 5px 15px;
+    border-radius: 15px 0px 0px  15px;
+}
+.skillList {
+    padding: 0px 0px 0px 25px !important;
+
+}
