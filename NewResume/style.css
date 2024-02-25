@@ -1,49 +1,114 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+* {
+    font-family: "Poppins", sans-serif;
+}
 
-
-.Lside{
-    background-color: rgb(66, 66, 66)  !important;
+.Lside {
+    background-color: rgb(66, 66, 66) !important;
     color: white;
-    width: auto;
-    height: auto;
 }
 
 .myimg {
     display: flex;
     align-items: center;
-    justify-content: center ;
+    justify-content: center;
 }
 
-.myimg img{
+.myimg img {
     margin: 10px;
-    width: 125px ;
+    width: 125px;
     height: 125px;
     border: 2px solid white;
     border-radius: 50%;
 }
 
-.Rside{
-    background-color: rgb(137, 131, 250)  !important;
+.Rside {
+    background-color: rgb(255, 255, 255) !important;
 }
 
-.container{
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 105px;
+.container {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
 }
 
-.Lhead{
-    margin: 15px 0px  10px 0px ;
+.Lhead {
+    margin: 15px 0px 10px 0px;
 }
 
-.addr, .skill, .phone, .email, .website, .proficient{
-    line-height: 6px;
-    font-family: fira Code;
+.addr, .phone, .email, .website, .familiar, .proficient {
+    line-height: 0.3;
     font-size: larger;
 }
 
-.familiar, .proficient{
-    color: rgb(255, 255, 255);
+.link a{
+    text-decoration: none;
+    color: white;
+}
 
+.link a:hover{
+    color: #8e1dff;
+}
+
+.proficient {
+    margin: 10px 0px 15px 0px;
+}
+
+.familiar{
+    margin: 15px 0px 10px 0px;
+    padding-bottom: 5px;
+}
+
+
+
+.Lside p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.myname{
+    margin-top: 75px;
+}
+
+.techSkillParent{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0px 10px 0px;    
+}
+
+.techSkill{
+    margin-bottom: 5px;
+}
+
+.techSkill p{
+    margin-bottom: 3px;
+}
+
+hr{
+    height: 2px !important;
+    /* width: 75%; */
+}
+
+.description{
+    text-align: justify;
+    /* width: 75%;  */
+}
+
+.employeHistory h6{
+    margin-bottom: 0px;
+}
+
+.employeHistory hr{
+    padding: 0px;
+    background-color: rgb(130, 0, 252) !important; 
+}
+
+.companyHead{
+    display: flex;
+    gap: 15px;
+    justify-content:space-between;
 }
