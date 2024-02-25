@@ -26,6 +26,11 @@ body {
   ) !important; /* Adjust this value based on the navbar height */
 }
 
+.tag{
+  display: flex;
+}
+
+
 #lt {
   font-family: Fira Code;
   color: #8e1dff !important;
@@ -154,6 +159,8 @@ body {
   -webkit-animation: slide-left 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-left 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
+
+
 
 
 

@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
+
+
+
+.Lside{
+    background-color: rgb(66, 66, 66)  !important;
+    color: white;
+    width: auto;
+    height: auto;
+}
+
+.myimg {
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+
+.myimg img{
+    margin: 10px;
+    width: 125px ;
+    height: 125px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.Rside{
+    background-color: rgb(137, 131, 250)  !important;
+}
+
+.container{
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 105px;
+}
+
+.Lhead{
+    margin: 15px 0px  10px 0px ;
+}
+
+.addr, .skill, .phone, .email, .website, .proficient{
+    line-height: 6px;
+    font-family: fira Code;
+    font-size: larger;
+}
+
+.familiar, .proficient{
+    color: rgb(255, 255, 255);
+
+}
