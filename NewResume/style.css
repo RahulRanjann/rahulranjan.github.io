@@ -5,6 +5,11 @@
     font-family: "Poppins", sans-serif;
 }
 
+p{
+    margin: 0px;
+    padding: 0px;
+}
+
 .Lside {
     background-color: rgb(66, 66, 66) !important;
     color: white;
@@ -61,7 +66,9 @@
     padding-bottom: 5px;
 }
 
-
+.fullstack{
+    margin-bottom: 0px;
+}
 
 .Lside p{
     font-family: "Poppins", sans-serif;
@@ -88,10 +95,6 @@
     margin-bottom: 3px;
 }
 
-hr{
-    height: 2px !important;
-    /* width: 75%; */
-}
 
 .description{
     text-align: justify;
@@ -102,13 +105,75 @@ hr{
     margin-bottom: 0px;
 }
 
-.employeHistory hr{
+.hr{
+    opacity: 1;
+    height: 2px !important;
     padding: 0px;
-    background-color: rgb(130, 0, 252) !important; 
+    margin-top: 0px;
+    background-color: #7f00fd !important; 
 }
 
 .companyHead{
     display: flex;
     gap: 15px;
     justify-content:space-between;
+}
+.companyName p, .date p{
+    margin-bottom: 0px;
+}
+
+.companyName p{
+    font-weight: bold;
+}
+
+.date p{
+    font-weight: bold;
+}
+
+
+.workLocation p{
+    text-align: center;
+    border: 2px solid blueviolet;
+    background-color: #8e1dff;
+    border-radius: 15px;
+    width: 90px;
+    color:  white;
+}
+
+.techSkill .progress-bar {
+    background-color: #8e1dff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.instituteName p, .date p{
+    margin-bottom: 0px;
+}
+
+.instituteName p{
+    font-weight: bold;
+}
+
+.instituteHead{
+    display: flex;
+    gap: 15px;
+    justify-content:space-between;
+
+}
+
+.education h6{
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+
+}
+
+.projects h6{
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+.projectName p{
+    font-weight: bold;
 }
