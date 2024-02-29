@@ -5,9 +5,18 @@
     font-family: "Poppins", sans-serif;
 }
 
+.custom-container {
+    max-width: 900px; /* Set your desired maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
 p{
     margin: 0px;
     padding: 0px;
+}
+
+.row{
+    padding-top: 60px !important;
 }
 
 .Lside {
@@ -19,6 +28,7 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .myimg img {
@@ -27,16 +37,19 @@ p{
     height: 125px;
     border: 2px solid white;
     border-radius: 50%;
+    z-index: 1;
 }
 
 .Rside {
-    background-color: rgb(255, 255, 255) !important;
+    /* background-color: rgb(255, 255, 255) !important; */
+    z-index: 2;
 }
 
 .container {
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 5%;
+    position: relative !important;
 }
 
 .Lhead {
@@ -66,9 +79,6 @@ p{
     padding-bottom: 5px;
 }
 
-.fullstack{
-    margin-bottom: 0px;
-}
 
 .Lside p{
     font-family: "Poppins", sans-serif;
@@ -176,4 +186,36 @@ p{
 
 .projectName p{
     font-weight: bold;
+}
+
+.brd-hr{
+    border-bottom: 3px solid blueviolet;
+    margin-bottom: 15px !important;
+}
+
+
+/* Create a side styler */
+
+.design{
+    position: absolute;
+}
+.first{
+    clip-path: polygon(100% 0, 0 0, 100% 50%);
+    background-color: blueviolet !important;
+    height: 30rem;
+    width: 60rem;
+    right: 10px !important;
+    top: 0%;
+    right:0%;
+    z-index: 1;
+}
+
+.second{
+    clip-path: polygon(100% 0, 0 0, 0 50%);
+    background-color: gray !important;
+    height: 20rem;
+    width: 50rem;
+    top: 0%;
+    left:0%;
+    z-index: 0;
 }
