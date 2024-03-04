@@ -1,3 +1,4 @@
+
 document.querySelector("#switch").addEventListener("click", function () {
   const html = document.querySelector('html');
   const currentTheme = html.getAttribute('data-mdb-theme');
@@ -16,24 +17,17 @@ function clickFun(element) {
   pages.forEach(function (page) {
     page.classList.remove("active");
   });
-  console.log(element.dataset.active);
-  const sect = document
-    .getElementById(element.dataset.activePage)
-    .classList.add("active");
+  // console.log(element.dataset.active);
+  // const sect = document
+  //   .getElementById(element.dataset.activePage)
+  //   .classList.add("active");
+
+  const sect = element.getAttribute("data-active");
+  document.getElementById(sect).classList.add("active");
+
+
+
 }
 
-var typed = new Typed(".typing", {
-  strings: [
-    "Rahul",
-    " a Friend.",
-    "a Programmer.",
-    "a Gamer.",
-    "a Student.",
-    "Developer.",
-  ],
-  loop: true,
-  typeSpeed: 50,
-  backSpeed: 50,
-});
 
-
+// onclick using js

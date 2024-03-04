@@ -30,6 +30,12 @@ body {
   display: flex;
 }
 
+.navbar {
+  position: sticky !important;
+  top: 0;
+  /* z-index: 100; */
+}
+
 
 #lt {
   font-family: Fira Code;
@@ -177,6 +183,17 @@ body {
 .cvLink:hover a{
   color: blueviolet;
 }
+
+
+.pages.active{
+  display: block !important;
+
+}
+
+.pages{
+  display: none;
+}
+
 
 
 @-webkit-keyframes slide-left {

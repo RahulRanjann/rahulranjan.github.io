@@ -49,19 +49,19 @@
         <!-- Left links -->
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
           <li class="nav-item">
-            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="#home" onclick="clickFun(this)" data-active="home" >Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#about" onclick="clickFun(this)" data-active="about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link" href="#projects" onclick="clickFun(this)" data-active="projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#skill">Skill</a>
+            <a class="nav-link" href="#skill" onclick="clickFun(this)" data-active="skill">Skill</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#education">Education</a>
+            <a class="nav-link" href="#education" onclick="clickFun(this)" data-active="education">Education</a>
           </li>
         </ul>
         <!-- Left links -->
@@ -82,7 +82,7 @@
   <!-- Navbar -->
 
 
-  <section id="home" class="page active">
+  <section id="home" class="pages active">
 
     <div class="container">
       <div class="row home">
@@ -93,7 +93,7 @@
             </span>
             <h1>Hi, I'm <span class="myname">Rahul</span></h1>
             <h3>
-              i am a <span class="typing"></span>
+              i am <span class="typing"></span>
             </h3>
             <br>
             <p class="description">
@@ -127,96 +127,58 @@
 
 
 
-  <section  id= "about"  class="page">
+  <section  id= "about"  class="pages">
     <div class="container">
       <h1>i'm About</h1>
     </div>
   </section>
 
-  <section id="projects" class="page">
+  <section id="projects" class="pages">
     <div class="container">
       <h1>im project</h1>
     </div>
   </section>
 
-  <section id="skill" class="page">
+  <section id="skill" class="pages">
     <div class="container">
       <h1>i'm skills</h1>
     </div>
   </section>
 
-  <section id="education" class="page">
+  <section id="education" class="pages">
     <div class="container">
       <h1>i'm education</h1>
     </div>
   </section>
 
-
-
-
-
-
-
-
-
-
-  <!-- 
-  <div class="coniner">
-    <div class="sec" id="home">
-      <div class="row" style="display: flex !important;">
-        <div class="col-md-6" style="background-color: aqua; height: auto; width: 100vw;">D1</div>
-        <div class="col-md-6" style="background-color: blue; height: auto; width: 100vw;">D2</div>
-      </div>
-    </div>
-
-
-
-
-
-    <div class="homeC1">
-      <span class="title">
-        Web Developer
-      </span>
-      <h1>Hi, i'm <span class="myname">Rahul</span></h1>
-      <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing e deleniti dolores itaque maiores!</p>
-    </div>
-
-    <div class="homeC2">
-      <div class="circle">
-        <img src="assets/img/rara.jpg" alt="me">
-      </div>
-    </div>
-
-    <div class="sec" id="about" name=" about">
-      <a class="about">
-        <div class="row justify-content-center align-items-center g-2">
-          <div class="col">Column</div>
-          <div class="col">Column</div>
-
-        </div>
-
-      </a>
-    </div>
-
-    <div class="sec" id="projects">
-      <a name="projects">
-        <h1>Welcome to the Projects Page!</h1>
-        <p>This is the content of the Home Page.</p>
-      </a>
-    </div>
-
-
-
-    <div class="sec" id="education">
-      <a name="education">
-        <h1>Welcome to the Education Page!</h1>
-        <p>This is the content of the Home Page.</p>
-      </a>
-    </div>
-  </div> -->
-
+  
   <script src="script.js"></script>
+  <script src="assets/typed/typed.js"></script>
   <script src="./assets/typed/typed.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
+  <script type="module" src="./assets/typed/typed.js"></script>
+<script type="module">
+    document.addEventListener("DOMContentLoaded", function() {
+
+        var typed = new Typed(".typing", {
+            strings: [
+                "a MITian.",
+                "a Programmer.",
+                "a Gamer.",
+                "a Student.",
+                "a Developer.",
+            ],
+            loop: true,
+            typeSpeed: 50,
+            backSpeed: 50,
+        });
+    });
+</script>
+
+
+
   <!-- MDB -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"></script>
 
