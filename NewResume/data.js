@@ -1,10 +1,15 @@
 const profileData = {
-    name: "Rahul Ranjan",
+    Firstname: "Rahul",
+    Lastname: "Ranjan",
     subtitle: "Full Stack",
-    imag: {
-        src: "some",
-        alt: "me",
-    },
+    
+    imag: [
+        {
+            src: "assests/img/me.jpg",
+            alt: "me",
+        }
+    
+    ],
 
     internship: [
         {
@@ -57,15 +62,33 @@ const profileData = {
         }
     ],
     skill: [
-        {name: "Java"},
-        {name: "C"},
-        {name: "C++"},
-        {name: "Python"},
-        {name: "Bootstrap"},
-        {name: "Github"},
-        {name: "JavaScript"},
-        {name: "CSS"},
-        {name: "HTML"},
+        {name: "Java",
+        score: "80%"
+        },
+        {name: "C",
+        score: "50%"
+        },
+        {name: "C++",
+        score: "30%"
+        },
+        {name: "Python",
+        score: "10%"
+        },
+        {name: "Bootstrap",
+        score: "100%"
+        },
+        {name: "Github",
+        score: "75%"
+        },
+        {name: "JavaScript",
+        score: "70%"
+        },
+        {name: "CSS",
+        score: "90%"
+        },
+        {name: "HTML",
+        score: "90%"
+        },
     ]
 
 }

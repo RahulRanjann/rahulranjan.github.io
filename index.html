@@ -80,44 +80,76 @@
     <!-- Container wrapper -->
   </nav>
   <!-- Navbar -->
-  <div class="container">
-    <div class="row home">
-      <div class="col-md-8 ">
-        <div class="homeC1">
-          <span class="title">
-            Web Developer
-          </span>
-          <h1>Hi, I'm <span class="myname">Rahul</span></h1>
-          <h3>
-            i am a <span class="typing">Developer</span>
-          </h3>
-          <br>
-          <p class="description">
-            <span>Hi there! I am a Developer who loves creating and making something better.</span>
-            <br>
-            <span>
-              I am currently pursuing B.Tech in Computer Science at MIT Manipal possessing strong technical skills,
-              particularly in JavaScript, Java, Firebase...
-            </span>
-          </p>
-          <div class="btnCv">
-            <button class="cvLink">Download Resume</button>
-          </div>
-        </div>
-      </div>
 
-      <div class="col-md-4 picBox">
-        <div class="homeC2" data-tilt>
-          <div class="circle">
-            <img src="assets/img/image-removebg-preview (3).png" alt="me">
+
+  <section id="home" class="page active">
+
+    <div class="container">
+      <div class="row home">
+        <div class="col-md-8 ">
+          <div class="homeC1">
+            <span class="title">
+              Web Developer
+            </span>
+            <h1>Hi, I'm <span class="myname">Rahul</span></h1>
+            <h3>
+              i am a <span class="typing"></span>
+            </h3>
+            <br>
+            <p class="description">
+              <span>Hi there! I am a Developer who loves creating and making something better.</span>
+              <br>
+              <span>
+                I am currently pursuing B.Tech in Computer Science at MIT Manipal possessing strong technical skills,
+                particularly in JavaScript, Java, Firebase...
+              </span>
+            </p>
+            <div class="btnCv">
+                <button class="cvLink" onclick="window.location.href='NewResume/index.html'" >Download Resume</button>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4 picBox">
+          <div class="homeC2" data-tilt>
+            <div class="circle">
+              <img src="assets/img/image-removebg-preview (3).png" alt="me">
+            </div>
           </div>
         </div>
       </div>
+  
+      
+  
     </div>
 
-    
+  </section>
 
-  </div>
+
+
+  <section  id= "about"  class="page">
+    <div class="container">
+      <h1>i'm About</h1>
+    </div>
+  </section>
+
+  <section id="projects" class="page">
+    <div class="container">
+      <h1>im project</h1>
+    </div>
+  </section>
+
+  <section id="skill" class="page">
+    <div class="container">
+      <h1>i'm skills</h1>
+    </div>
+  </section>
+
+  <section id="education" class="page">
+    <div class="container">
+      <h1>i'm education</h1>
+    </div>
+  </section>
 
 
 
@@ -184,6 +216,7 @@
   </div> -->
 
   <script src="script.js"></script>
+  <script src="./assets/typed/typed.min.js"></script>
   <!-- MDB -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"></script>
 

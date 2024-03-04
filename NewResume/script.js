@@ -64,10 +64,13 @@ function setInternship(internship){
 }
 
 function setSkill(skill){
-    const  techSkill = document.querySelector(".SkillList");
+    const  techSkill = document.querySelector(".techSkill");
     skill.forEach((s)=>{
         techSkill.innerHTML += `
-        <li>${s.name}</li>
+        <p>${s.name}</p>
+        <div class="progress" style="height: 5px;">
+            <div class="progress-bar" role="progressbar" style="width: ${s.score}" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
         `
     })
 }
@@ -86,11 +89,10 @@ function setSubTitle(subtitle){
     `
 }
 
-function setImg(img){
-    const myimg = document.querySelector(".imgbox");
-    myimg.innerHTML += `
-        <img src="${img.src}"
-        alt="${img.alt}">
+function setImg(imag){
+    const img = document.querySelector(".myimg");
+    img.innerHTML += `
+        <img src=${imag.src} alt=${imag.alt}>
     `
 }
 
