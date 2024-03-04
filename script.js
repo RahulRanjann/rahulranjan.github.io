@@ -17,16 +17,8 @@ function clickFun(element) {
   pages.forEach(function (page) {
     page.classList.remove("active");
   });
-  // console.log(element.dataset.active);
-  // const sect = document
-  //   .getElementById(element.dataset.activePage)
-  //   .classList.add("active");
-
   const sect = element.getAttribute("data-active");
   document.getElementById(sect).classList.add("active");
-
-
-
 }
 
 
