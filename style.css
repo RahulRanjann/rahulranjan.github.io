@@ -39,6 +39,10 @@ body {
   /* z-index: 100; */
 }
 
+.nav-link{
+  font-weight: 700 !important;
+}
+
 
 #lt {
   font-family: Fira Code;
@@ -273,17 +277,64 @@ transform: scale(1.05);
 
 /* About starts here */
 
-.aboutMe{
+.aboutMe, .INTERESTS{
   display: flex;
   font-size: x-large;
+  margin-bottom: 20px;
   
 }
 
-.aboutMe > .line{
+.aboutMe > .line, .INTERESTS> .line{
   width: 100px;
   height: 27px;
   /* background-color: blueviolet; */
-  border-bottom:2px solid blueviolet ;
+  border-bottom:3px solid blueviolet ;
+  mar
 
+}
+
+.img-desc{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img-desc  img{
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: auto;
+box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+}
+
+.img-desc .desc{
+  text-align: justify;
+  padding: 0px  100px 0px 100px;
+}
+
+.born-brought-up{
+    display: flex;
+    align-items: center;
+}
+
+.born-brought-up .bi-cake, .bi-geo, .bi-envelope-at{
+  color: rgb(132, 0, 255);
+  font-size: x-large;
+  font-weight: 900;
+}
+
+.born-brought-up div{
+    margin: 0px 15px 0px 5px;
+}
+
+.born-brought-up a{
+    color: #000000;
+}
+
+.INTERESTS{
+    margin-top: 25px;
 }
 
