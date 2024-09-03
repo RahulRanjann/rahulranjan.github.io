@@ -13,8 +13,19 @@ const profileData = {
 
     internship: [
         {
+            name: "Lets Transport",
+            duration: "Many 2024 to Present",
+            address: "Bengulure, Karnataka, IN",
+            role: "Full Stack Developer",
+            workMode: "On site",
+            desc:[
+                "Develop and maintain responsive web applications using Wix, HTML, CSS, JavaScript, and Git.",
+                "Contribute to both frontend and backend development, ensuring seamless user experiences."
+            ]
+        },
+        {
             name: "Pine&Lime",
-            duration: "Jan 2024 to Present",
+            duration: "April 2024 to June 2024",
             address: "Gurgaon, Haryana, IN",
             role: "Full Stack Developer",
             workMode: "Remote",

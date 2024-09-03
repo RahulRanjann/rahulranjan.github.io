@@ -29,7 +29,7 @@ body {
   ) !important; /* Adjust this value based on the navbar height */
 }
 
-.tag{
+.tag{   
   display: flex;
 }
 
@@ -289,7 +289,7 @@ transform: scale(1.05);
   height: 27px;
   /* background-color: blueviolet; */
   border-bottom:3px solid blueviolet ;
-  mar
+  
 
 }
 
@@ -338,3 +338,34 @@ box-shadow:  20px 20px 60px #bebebe,
     margin-top: 25px;
 }
 
+
+
+/* skills starts here */
+
+/* Skills Section */
+.languages {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(226, 225, 225);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.lang-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    width: 100px; /* Adjust based on your design */
+}
+
+.lang-box img {
+    margin-right: 10px;
+    
+}
+
+.lang-box span {
+    font-size: 16px;
+    color: var(--text-color);
+}
