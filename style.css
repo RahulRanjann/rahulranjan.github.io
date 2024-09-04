@@ -343,9 +343,13 @@ box-shadow:  20px 20px 60px #bebebe,
 /* skills starts here */
 
 /* Skills Section */
+#skills .container {
+    height: 100%;
+    width: 100%;
+}
+
 .languages {
     display: flex;
-    flex-wrap: wrap;
     background-color: rgb(226, 225, 225);
     border-radius: 10px;
     padding: 20px;
