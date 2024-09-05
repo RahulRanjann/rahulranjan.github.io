@@ -276,6 +276,9 @@ body {
 
 
 /* About starts here */
+.about {
+    font-family: 'fira';
+}
 
 .aboutMe,
 .INTERESTS {
@@ -346,23 +349,24 @@ body {
 
 /* skills starts here */
 
-#skill .container{
+#skill .container {
     margin-top: 100px;
 }
 
-.lang{
+.lang {
     font-size: x-large;
-    font-weight: 500;   
-    font-family: 'Fira Code', monospace;   
+    font-weight: 500;
+    font-family: 'Fira Code', monospace;
 
 }
 
 .languages {
+    border-radius: 50px;
+    background: #ffffff;
+    box-shadow: 20px 20px 60px #d9d9d9,
+        -20px -20px 60px #ffffff;
     display: flex;
     flex-wrap: wrap;
-    /* Allow items to wrap to the next line */
-    /* background-color: #8e1dff; */
-    border: 3px solid #8e1dff;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
@@ -370,21 +374,117 @@ body {
     /* Make sure it takes full width */
 }
 
+/* Dark theme specific styles */
+.theme-dark .languages {
+    background: #1c1c1c;
+    border-radius: 50px;
+    background: #595959;
+    box-shadow: 20px 20px 60px #4c4c4c, -20px -20px 60px #666666;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+
 .lang-box {
     display: flex;
     align-items: center;
-    justify-content:space-evenly ;
+    /* justify-content:space-between ; */
     width: 100%;
+    padding: 0px 15px 0px 15px;
     /* Ensure it adapts to the full container width */
     flex-wrap: wrap;
     /* Let the items wrap to prevent overflow */
-}
-
-.lang-box img {
-    /* width: 50px; */
+    gap: 30px;
 }
 
 section#skill {
-    max-height: 100vh; /* Limit the height to the viewport */
-    overflow-y: auto; /* Allow scrolling if content overflows */
-}  
+    max-height: 100vh;
+    /* Limit the height to the viewport */
+    overflow-y: auto;
+    /* Allow scrolling if content overflows */
+}
+
+
+/* Education starts here */
+
+section#education {
+    max-height: 100vh;
+    /* Limit the height to the viewport */
+    overflow-y: auto;
+    /* Allow scrolling if content overflows */
+}
+
+#education .container {
+    padding-top: 50px;
+}
+
+.college-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.college {
+    border-radius: 50px;
+    background: #ececec;
+    height: 350px;
+    width: 450px;
+    padding: 25px;
+    border-radius: 50px;
+    background: #ffffff;
+    box-shadow: 20px 20px 60px #d9d9d9,
+        -20px -20px 60px #ffffff;
+}
+
+.college .college-img img {
+    height: 100px;
+    width: 350px;
+}
+
+.relevant {
+    margin-bottom: 0px;
+}
+
+.certificate-img img {
+    height: 100px;
+    width: 250px;
+    padding: 10px;
+}
+
+.certificate-list {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.certificate {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    height: 120px;
+    width: 280px;
+    border-radius: 50px;
+    margin: 0px 10px 0px 10px;
+    background: #ffffff;
+    box-shadow: 20px 20px 60px #d9d9d9,
+        -20px -20px 60px #ffffff;
+}
+
+.certificate:hover {
+    /* transform: scale(1.0); */
+    border: 2px solid rgb(168, 103, 230);
+    background: rgba(224, 224, 224, 0.2);
+    /* border-radius: 16px; */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    /* border: 1px solid rgba(255, 255, 255, 0.3); */
+}

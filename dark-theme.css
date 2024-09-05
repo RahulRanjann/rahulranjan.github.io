@@ -1,0 +1,27 @@
+/* Dark theme */
+:root {
+    --background-color: #243133;
+    --text-color: #ffffff;
+    --color-primary: #17ed90;
+    --color-secondary: #243133;
+    --color-accent: #12cdea;
+    --font-color: #ffffff;
+}
+
+body {
+    background-color: var(--color-secondary) !important;
+    color: var(--font-color) !important;
+}
+
+.theme-dark .languages {
+    background: #1c1c1c;
+    border-radius: 50px;
+    background: #595959;
+    box-shadow: 20px 20px 60px #4c4c4c, -20px -20px 60px #666666;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
